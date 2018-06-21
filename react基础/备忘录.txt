@@ -1,0 +1,15 @@
+1.react的安装（app是你开始构建一个全新单页应用的最好方式）
+
+	npm install -g create-react-app
+	create-react-app my-app
+
+	cd my-app
+	npm start
+2.sublime里面的jsx语法支持
+	安装插件babel（支持ES6、React.js、jsx代码语法高亮。）
+	安装  command+shift+p -> install package -> babel
+	配置  该插件不需要额外配置，在打开.js或.jsx后缀的文件，直接选择Babel为对应的语法就可以了。
+
+3.react修改端口号
+	3.1 打开react项目里面的package.json文件，
+	3.2 将 scripts中的start键值对 "start": "react-scripts start"  修改为"start": "set PORT=8080 && react-scripts start"
