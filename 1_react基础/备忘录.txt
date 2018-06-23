@@ -1,0 +1,27 @@
+1.react的安装（app是你开始构建一个全新单页应用的最好方式）
+
+	npm install -g create-react-app
+	create-react-app my-app
+
+	cd my-app
+	npm start
+2.sublime里面的jsx语法支持
+	安装插件babel（支持ES6、React.js、jsx代码语法高亮。）
+	安装  command+shift+p -> install package -> babel
+	配置  该插件不需要额外配置，在打开.js或.jsx后缀的文件，直接选择Babel为对应的语法就可以了。
+
+3.react修改端口号
+	3.1 打开react项目里面的package.json文件，
+	3.2 将 scripts中的start键值对 "start": "react-scripts start"  修改为"start": "set PORT=8080 && react-scripts start"
+4.删除不需要的东西
+
+5.想要运行已经写过的代码时候（代码全部放在了history文件夹里面）
+	1.React元素和React组件里面的代码 
+		1.1 想要运行谁，就把它拷贝一份放在src文件下改名为index.js ，
+		1.2 然后空小黑屏  npm start
+		1.3 打开在8080 端口即可
+		
+	2.EG文件夹里面的代码是一个整体
+		1.1 只需要把EG里面的子文件和子文件夹拷贝一份放进src文件夹里面即可
+		1.2 npm start
+		1.3 8080 端口
